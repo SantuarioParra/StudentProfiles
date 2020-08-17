@@ -20,6 +20,10 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+Vue.component('app-component',require('./App.vue').default);
+Vue.component('nav-bar-component',require('./views/layouts/NavBar').default);
+Vue.component('side-bar-component',require('./views/layouts/SideBar').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -29,10 +33,13 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 //Import Vuetify
 import vuetify from './plugins/vuetify'
+
 //Import Vuex
 import store from './store'
+
 //Import Router
 import router from './routes'
+
 //Import Vuelidate
 import vuelidate from 'vuelidate'
 Vue.use(vuelidate);
