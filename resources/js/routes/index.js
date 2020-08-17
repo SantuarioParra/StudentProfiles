@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 import Home from '../views/Home'
 import About from '../views/About'
+import LogIn from '../views/LogIn'
 const routes=[
     {
         path:'/',
@@ -13,11 +14,18 @@ const routes=[
         pathToRegexOptions: { strict: true }
     },
     {
+        path:'/login',
+        name:'Login',
+        component: LogIn,
+        pathToRegexOptions: { strict: true }
+    },
+    {
         path:'/about',
         name:'About',
         component: About,
         pathToRegexOptions: { strict: true }
-    }
+    },
+
 ];
 
 const router = new VueRouter({

@@ -11,7 +11,7 @@
 
         <v-spacer></v-spacer>
 
-        <v-btn text small>login</v-btn>
+        <v-btn text small :to="{name:'Login'}" exact>login</v-btn>
 
         <v-menu offset-y rounded="b-xl">
             <template v-slot:activator="{ on, attrs }">
