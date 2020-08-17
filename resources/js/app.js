@@ -27,6 +27,19 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+//Import Vuetify
+import vuetify from './plugins/vuetify'
+//Import Vuex
+import store from './store'
+//Import Router
+import router from './routes'
+//Import Vuelidate
+import vuelidate from 'vuelidate'
+Vue.use(vuelidate);
+
 const app = new Vue({
+    vuetify,
+    store,
+    router,
     el: '#app',
 });
